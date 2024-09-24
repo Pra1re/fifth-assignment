@@ -19,6 +19,16 @@
         <div class="color">
 
             <div class="nav-items">
+                <div id="modal" class=" hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+                <div class="bg-white p-5 rounded shadow-md">
+                    <h3 class="font-bold mb-4">Recharge Your Account</h3>
+                    <input type="number" id="amnt" placeholder="Enter amount" class="modal1 p-2 mb-4 w-full" />
+                    <div class="flex justify-end">
+                        <button id="rsub" class="bg-lime-300 px-4 py-2 rounded-[8px] font-bold">Submit</button>
+                        <button id="closeModal" class="ml-2 bg-red-500 px-4 py-2 rounded-[8px] font-bold">Close</button>
+                    </div>
+                </div>
+            </div>
                 <button class="bg-lime-300 px-6 py-2 rounded-[8px] font-bold">Blog</button>
 
                 <div class="flex items-center gap-3 justify-center">
@@ -29,10 +39,11 @@
                 <div class="flex items-center gap-2 justify-center">
 
                     <img src="./assets/coin.png" alt="" width="30px">
-                    <p>555555</p>
+                    <p id="coin1">0</p>
                 </div>
 
 
+                <button class=" rcbtn bg-lime-300 px-4 py-2 rounded-[8px] font-bold " style="display: none;">Recharge</button>
 
             </div>
 
@@ -41,8 +52,8 @@
         <div class="bottom-button-navbar ">
 
 
-            <button>Donation</button>
-            <button>History</button>
+            <button id="donationButton" class="bg-lime-300">Donation</button>
+            <button id="historyButton" class="transparent" onclick="window.location.href='history.html';">History</button>
         </div>
 
 
@@ -55,7 +66,9 @@
     <section class="cards">
 
 
-        <div class="border">
+        <div class="border" data-index="1" data-card-id="card1">
+            
+            
             <img src="./assets/noakhali.png" alt="" class="card-img">
             <div class="border-child flex flex-col justify-between">
                 <div class="flex amount">
@@ -71,37 +84,28 @@
                 <button>Donate Now</button>
             </div>
         </div>
-        <div class="border">
+        <div class="border" data-index="2" data-card-id="card2">
             <img src="./assets/feni.png" alt="" class="card-img">
             <div class="border-child flex flex-col justify-between">
                 <div class="flex amount">
                     <img src="./assets/coin.png" alt="">
                     <h3>0 bdt </h3>
                 </div>
-                <h2>Donate for Flood at Noakhali, Bangladesh</h2>
-                <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss.
-                    Your generous donation will help provide immediate aid, including food, clean water, and medical
-                    supplies, to those affected by this calamity. Together, we can offer crucial support and help
-                    rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real
-                    difference. Please consider donating today to assist those in urgent need.</p>
+                <h2>Donate for Flood Relief in Feni,Bangladesh</h2>
+                <p>The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                 <input type="text" placeholder="Write donation amount">
                 <button>Donate Now</button>
             </div>
         </div>
-        <div class="border">
+        <div class="border" data-index="3" data-card-id="card3">
             <img src="./assets/quota-protest.png" alt="" class="card-img">
             <div class="border-child flex flex-col justify-between">
                 <div class="flex amount">
                     <img src="./assets/coin.png" alt="">
-                    <h3>55555 bdt </h3>
+                    <h3>0 bdt </h3>
                 </div>
-                <h2>Donate for Flood at Noakhali, Bangladesh</h2>
-                <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many
-                    individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary
-                    supplies to those affected. By contributing, you help ensure that injured individuals receive the
-                    care and support they need during this challenging time. Every donation plays a vital role in
-                    alleviating their suffering and aiding in their recovery. Please consider making a donation to
-                    support these brave individuals in their time of need.</p>
+                <h2>Aid for Injured in the Quota Movement</h2>
+                <p>The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
                 <input type="text" placeholder="Write donation amount">
                 <button>Donate Now</button>
             </div>

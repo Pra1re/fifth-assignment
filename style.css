@@ -24,10 +24,12 @@
 .bottom-button-navbar button{
     width: 120px;
     border-radius: 8px;
-    background-color: rgb(180, 244, 97);
 
 border: 1px solid rgba(0, 0, 0, 0.46);
     padding: 10px 20px;
+}
+.transparent {
+    background-color: transparent;
 }
 .cards{
     width: 87%;
@@ -41,8 +43,13 @@ border: 1px solid rgba(0, 0, 0, 0.46);
     display: flex;
     padding: 20px;
     gap: 20px;
+    cursor: pointer;
 }
-.border-child{
+.modal1{
+    border: 1px solid rgba(0, 0, 0, 0.437);
+}
+.modal1:focus{
+    outline: none;
 }
 .border h2{
     font-weight: 800;

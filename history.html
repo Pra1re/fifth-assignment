@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="navabar flex flex-col gap-12 mb-10">
+
+
+        <div class="color">
+
+            <div class="nav-items">
+                <div id="modal" class=" hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+                <div class="bg-white p-5 rounded shadow-md">
+                    <h3 class="font-bold mb-4">Recharge Your Account</h3>
+                    <input type="number" id="amnt" placeholder="Enter amount" class="modal1 p-2 mb-4 w-full" />
+                    <div class="flex justify-end">
+                        <button id="rsub" class="bg-lime-300 px-4 py-2 rounded-[8px] font-bold">Submit</button>
+                        <button id="closeModal" class="ml-2 bg-red-500 px-4 py-2 rounded-[8px] font-bold">Close</button>
+                    </div>
+                </div>
+            </div>
+                <button class="bg-lime-300 px-6 py-2 rounded-[8px] font-bold">Blog</button>
+
+                <div class="flex items-center gap-3 justify-center">
+                    <img src="./assets/logo.png" alt="" width="40px">
+                    <p class="font-extrabold">Donate Bangladesh</p>
+                </div>
+
+                <div class="flex items-center gap-2 justify-center">
+
+                    <img src="./assets/coin.png" alt="" width="30px">
+                    <p id="coin1">0</p>
+                </div>
+
+
+                <button class=" rcbtn bg-lime-300 px-4 py-2 rounded-[8px] font-bold " style="display: none;">Recharge</button>
+
+            </div>
+
+
+        </div>
+        <div class="bottom-button-navbar ">
+
+
+            <button id="donationButton"  class="transparent" onclick="window.location.href='index.html';">Donation</button>
+            <button id="historyButton" class="bg-lime-300" >History</button>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+    <div class="history-container"></div>
+        <!-- Donation history will be loaded here -->
+    </div>
+
+
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
