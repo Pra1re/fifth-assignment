@@ -61,6 +61,10 @@ border: 1px solid rgba(0, 0, 0, 0.46);
     gap: 20px;
     cursor: pointer;
 }
+.border p{
+    font-weight: 400;
+    font-family: sans-serif;
+}
 .modal1{
     border: 1px solid rgba(0, 0, 0, 0.437);
 }
