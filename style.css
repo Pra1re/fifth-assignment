@@ -35,6 +35,14 @@ position: sticky;
 border: 1px solid rgba(0, 0, 0, 0.46);
     padding: 10px 20px;
 }
+
+.bottom-button-navbar button.inactive:hover{
+    background-color: rgba(128, 128, 128, 0.229);
+}
+.bottom-button-navbar button.active:hover{
+    opacity: 0.8;
+}
+
 .transparent {
     background-color: transparent;
 }
