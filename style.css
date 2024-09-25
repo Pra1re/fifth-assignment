@@ -13,6 +13,12 @@
     justify-content: space-between;
     padding: 10px 0 40px 0;
 }
+.navabar{
+
+gap: 20px;
+position: sticky;
+
+}
 .bottom-button-navbar{
 
     display: flex;
@@ -106,4 +112,64 @@ outline: none;
     margin-bottom: 15px;
     padding: 25px 5px;
     min-height: 100px;
+}
+
+@media (max-width: 576px) {
+    .navabar {
+        gap: 6px;
+        padding: 10px;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-items button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .color {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navabar{
+        background: rgb(249, 247, 243);
+        gap: 5px;
+        position: static;
+    }
+    
+    .nav-items{
+        padding-bottom: 5px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 auto;
+    }
+
+    .cards .border {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .border{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .border>img{
+        width: 500px;
+    }
+
+    .border-child {
+        padding: 10px;
+    }
+
+    .border-child input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
